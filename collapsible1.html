@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!--Compiled and minified CSS-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+    <!--Material Icons-->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <!--Font awesome-->
+    <script src="https://kit.fontawesome.com/6a79530112.js" crossorigin="anonymous"></script>
+    <!--custom css-->
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Nerko+One&display=swap" rel="stylesheet">
+    <title>form</title>
+</head>
+<body class="pink">
+    <nav class="blackberry">
+        <div class="nav-wrapper">
+            <div class="container">
+                <div class="col s12">
+                    <a href="" class="breadcrumb">Home</a>
+                    <a href="" class="breadcrumb">Users</a>
+                    <a href="" class="breadcrumb">Contact</a>
+                </div>
+            </div>
+        </div>
+    </nav> 
+<div class="container">
+    <h1 class="amber-text">Collapsible</h1>
+
+    <!--Collapsible-->
+   <ul class="collapsible" data-collapsible="accrodion">
+       <li>
+           <div class="collapsible-header">
+               <i class="material-icons">group_work</i>First
+           </div>
+           <div class="collapsible-body">
+               <span>This is the first area</span>
+        </div>
+       </li>
+       <!--Preselect-->
+       <li>
+        <div class="collapsible-header active">
+            <i class="material-icons">help</i>Second
+        </div>
+        <div class="collapsible-body">
+            <span>This is the second area</span>
+        </div>
+        </li>
+        <!---->
+        <li>
+            <div class="collapsible-header">
+                <i class="material-icons">info</i>Third
+            </div>
+            <div class="collapsible-body">
+                <span>This is the third area</span>
+   </ul>
+</div>
+
+
+<!--Jquery CDN-->
+<script src="https://code.jquery.com/jquery-3.5.1.min.js"
+integrity="sha256-9/aliU8dGd2tb6OSsuzixeV4y/faTqgFtohetphbbj0="
+crossorigin="anonymous"></script>
+<!-- Compiled and minified JavaScript -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+
+<script>
+
+$(document).ready(function(){
+    $('.collapsible').collapsible();
+  });
+
+  var instance = M.Collapsible.getInstance(elem);
+  
+  $('.collapsible').collapsible('methodName');
+    $('.collapsible').collapsible('methodName', paramName);
+
+
+</script> 
+</body>
+</html>
